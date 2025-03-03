@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct SwiftyDiaryDemoApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
             TodayView()
         }
+        .modelContainer(for: DiaryModel.self)
     }
 }
