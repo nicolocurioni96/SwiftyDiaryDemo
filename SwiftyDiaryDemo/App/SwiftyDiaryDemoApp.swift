@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftyDiaryDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodayView()
         }
     }
 }
